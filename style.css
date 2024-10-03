@@ -225,7 +225,7 @@
         color: #555;
         /* Cambia el color al pasar el mouse */
         text-decoration: underline;
-        size: 10px;
+        text-size-adjust: 20px;
         /* Añade subrayado al pasar el mouse */
     }
 
