@@ -1,0 +1,234 @@
+    /* General Styling */
+    body {
+        font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f4f8;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    header {
+        text-align: center;
+        padding: 30px;
+        background: linear-gradient(135deg, #007acc, #00a8e8);
+        color: white;
+        border-radius: 15px 15px 0 0;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 3em;
+        letter-spacing: 2px;
+    }
+
+    .contact-info {
+        margin-top: 15px;
+        font-size: 1.1em;
+    }
+
+    .contact-info p a {
+        color: white;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .contact-info p a:hover {
+        text-decoration: none;
+        color: #f0f0f0;
+    }
+
+    /* Section Titles */
+    h2 {
+        color: #007acc;
+        font-size: 2em;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background-color: #007acc;
+        bottom: -8px;
+        left: 0;
+        transition: width 0.3s ease-in-out;
+    }
+
+    h2:hover {
+        color: #005fa3;
+    }
+
+    h2:hover::after {
+        width: 100%;
+    }
+
+    /* Content Sections */
+    .section {
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+
+    .section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 1.8;
+    }
+
+    li {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    li:hover {
+        background-color: #f0f8ff;
+        border-left: 5px solid #007acc;
+        padding-left: 15px;
+    }
+
+    li strong {
+        font-weight: bold;
+        color: #007acc;
+    }
+
+    /* Skill hover effect */
+    .skill {
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    .skill:hover {
+        transform: translateY(-3px);
+        color: #007acc;
+    }
+
+    /* Appointment Form */
+    .appointment-form {
+        padding: 30px;
+        background-color: #e7f4ff;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .appointment-form label {
+        font-weight: bold;
+        color: #005fa3;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .appointment-form input,
+    .appointment-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: all 0.3s ease;
+    }
+
+    .appointment-form input:focus,
+    .appointment-form textarea:focus {
+        outline: none;
+        border-color: #007acc;
+        box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+    }
+
+    .appointment-form button {
+        background-color: #007acc;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+    }
+
+    .appointment-form button:hover {
+        background-color: #005fa3;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(135deg, #007acc, #00a8e8);
+        color: white;
+        border-radius: 0 0 15px 15px;
+        margin-top: 30px;
+    }
+
+    a {
+        color: #007acc;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        color: #005fa3;
+        text-decoration: underline;
+    }
+
+    /* Typing effect for professional title */
+    #typing-effect {
+        font-size: 1.5em;
+        color: white;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            width: 95%;
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+    }
