@@ -56,7 +56,7 @@
 
     /* Section Titles */
     h2 {
-        color: #007acc;
+        color: #074670;
         font-size: 2em;
         position: relative;
         display: inline-block;
@@ -211,6 +211,21 @@
         color: white;
         margin-top: 10px;
         letter-spacing: 2px;
+    }
+
+    /* Enlaces en la sección de credenciales */
+    .links {
+        color: black;
+        /* Cambia el color del texto a negro */
+        text-decoration: none;
+        /* Elimina el subrayado */
+    }
+
+    .links:hover {
+        color: #555;
+        /* Cambia el color al pasar el mouse */
+        text-decoration: underline;
+        /* Añade subrayado al pasar el mouse */
     }
 
     /* Responsive Design */
