@@ -153,16 +153,26 @@
                         an
                         appointment:</p>
 
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="date">Preferred Date & Time</label>
-                    <input type="datetime-local" id="date" name="date" required>
-
-                    <button type="submit">Schedule a Meeting</button>
+                    <label for="name-input">Name:</label>
+                    <!-- Label for the name input field -->
+                    <input type="text" id="name-input" name="clientName" autofocus placeholder="Type your name" />
+                    <!-- Text input field for name with placeholder and autofocus -->
+                    <br /><br />
+                    <label for="email-input">Email:</label>
+                    <!-- Label for the email input field -->
+                    <input type="email" id="email-input" name="clientEmail" placeholder="user@server.com" />
+                    <!-- Email input field with placeholder -->
+                    <br /><br />
+                    <label for="subject-input">Subject:</label>
+                    <!-- Label for the subject input field -->
+                    <input type="text" id="subject-input" name="subject" placeholder="Subject" />
+                    <!-- Text input field for subject with placeholder -->
+                    <br /><br />
+                    <textarea name="clientComment" cols="40" rows="10" placeholder="What's on your mind?"></textarea>
+                    <!-- Textarea for comments with placeholder -->
+                    <br /><br />
+                    <input type="submit" value="Send" />
+                    <!-- Submit button -->
                 </form>
             </section>
         </div>
