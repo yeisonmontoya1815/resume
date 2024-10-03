@@ -229,6 +229,21 @@
         /* Añade subrayado al pasar el mouse */
     }
 
+    header {
+        background-image: url('header.png');
+        /* Reemplaza con la ruta de tu imagen */
+        background-size: cover;
+        /* Ajusta la imagen para que cubra todo el encabezado */
+        background-position: center;
+        /* Centra la imagen en el encabezado */
+        color: white;
+        /* Cambia el color del texto, si es necesario */
+        padding: 50px 20px;
+        /* Ajusta el padding según tu diseño */
+        text-align: center;
+        /* Centra el texto */
+    }
+
     /* Responsive Design */
     @media (max-width: 768px) {
         .container {
