@@ -12,7 +12,8 @@ body {
 }
 
 header {
-    background-color: #007acc;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    /* Gradiente de azul oscuro a azul claro */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -27,7 +28,8 @@ h1 {
 h2 {
     margin-top: 20px;
     font-size: 2em;
-    border-bottom: 2px solid #007acc;
+    border-bottom: 2px solid rgba(11, 51, 78, 0.9);
+    color: rgba(11, 51, 78, 0.9);
     padding-bottom: 5px;
 }
 
@@ -38,7 +40,8 @@ h2 {
 nav {
     position: sticky;
     top: 0;
-    background-color: #007acc;
+    background-color: rgba(11, 51, 78, 0.9);
+    /* Fondo semi-transparente para el menú */
     z-index: 1000;
 }
 
@@ -62,6 +65,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav a:visited {
+    color: #fff;
+    /* Mantiene el color blanco después de hacer clic */
+}
+
 .container {
     padding: 20px;
 }
@@ -80,15 +88,58 @@ ul {
 
 li {
     margin: 10px 0;
-    /* Añadir un margen para espaciar las habilidades */
 }
+
+/*testing Prof summary*/
+.ProfSummary {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    /* Añade una transición suave para el color y la sombra del texto */
+}
+
+.ProfSummary:hover {
+    color: #012944;
+    /* Cambia el color del texto a un azul atractivo */
+    text-shadow: 1px rgba(20, 20, 20, 0.5);
+    /* Agrega sombra al texto para darle un efecto de profundidad */
+    cursor: pointer;
+    /* Cambia el cursor para indicar que es interactivo */
+}
+
+/* Opcional: Agregar un efecto en toda la sección al pasar el mouse */
+.section:hover {
+    background-color: #f0f8ff;
+    /* Cambia el fondo a un azul claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Aumenta la sombra al pasar el mouse */
+}
+
+/*end*/
 
 .skill {
     background-color: #e7f3ff;
-    /* Color uniforme para todas las habilidades */
     border-radius: 5px;
     padding: 5px;
 }
+
+.EducationHighlight:hover {
+    color: rgb(8, 8, 119);
+    font-size: large;
+}
+
+.SuperHighlight:hover {
+    color: rgb(8, 8, 119);
+    font-size: xx-large;
+}
+
+.links {
+    color: black;
+}
+
+.links:hover {
+    color: rgba(11, 51, 78, 0.9);
+    font-size: large;
+}
+
 
 form {
     margin: 40px 0;
@@ -128,37 +179,26 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #007acc;
-    /* Color de fondo */
     color: #fff;
-    /* Color del texto */
     position: relative;
     margin-top: 40px;
-    /* Espaciado superior */
 }
 
 footer p {
     margin: 10px 0;
-    /* Espaciado para el texto */
     font-size: 14px;
-    /* Tamaño de fuente más pequeño */
 }
 
 .social-icons {
     margin-top: 10px;
-    /* Espacio superior para los íconos */
 }
 
 .social-icons a {
     margin: 0 15px;
-    /* Espaciado horizontal entre íconos */
     color: #fff;
-    /* Color de los íconos */
     font-size: 24px;
-    /* Tamaño de los íconos */
     text-decoration: none;
-    /* Sin subrayado */
     transition: color 0.3s;
-    /* Transición suave al cambiar color */
 }
 
 .social-icons a:hover {
@@ -169,13 +209,10 @@ footer p {
 @media (max-width: 600px) {
     footer {
         padding: 15px;
-        /* Ajustar padding en pantallas pequeñas */
     }
 
     .social-icons a {
         font-size: 20px;
-        /* Reducir tamaño de íconos en pantallas pequeñas */
         margin: 0 10px;
-        /* Ajustar espaciado entre íconos */
     }
 }
