@@ -78,8 +78,14 @@ ul {
     list-style-type: none;
 }
 
+li {
+    margin: 10px 0;
+    /* Añadir un margen para espaciar las habilidades */
+}
+
 .skill {
     background-color: #e7f3ff;
+    /* Color uniforme para todas las habilidades */
     border-radius: 5px;
     padding: 5px;
 }
@@ -122,6 +128,54 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #007acc;
+    /* Color de fondo */
     color: #fff;
+    /* Color del texto */
     position: relative;
+    margin-top: 40px;
+    /* Espaciado superior */
+}
+
+footer p {
+    margin: 10px 0;
+    /* Espaciado para el texto */
+    font-size: 14px;
+    /* Tamaño de fuente más pequeño */
+}
+
+.social-icons {
+    margin-top: 10px;
+    /* Espacio superior para los íconos */
+}
+
+.social-icons a {
+    margin: 0 15px;
+    /* Espaciado horizontal entre íconos */
+    color: #fff;
+    /* Color de los íconos */
+    font-size: 24px;
+    /* Tamaño de los íconos */
+    text-decoration: none;
+    /* Sin subrayado */
+    transition: color 0.3s;
+    /* Transición suave al cambiar color */
+}
+
+.social-icons a:hover {
+    color: #e7f3ff;
+    /* Color en hover (un tono más claro) */
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 15px;
+        /* Ajustar padding en pantallas pequeñas */
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        /* Reducir tamaño de íconos en pantallas pequeñas */
+        margin: 0 10px;
+        /* Ajustar espaciado entre íconos */
+    }
 }
