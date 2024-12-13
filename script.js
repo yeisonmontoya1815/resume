@@ -69,8 +69,8 @@ document.styleSheets[0].insertRule(`
     }
 `, document.styleSheets[0].cssRules.length);
 
-// Background Color Transition (example)
-let colors = ["#FF5733", "#33FF57", "#3357FF", "#F0F0F0"];
+// Background Color Transition (Blue to White Scale)
+let colors = ["#3498db", "#5dade2", "#85c1ae", "#a2d9ce", "#d5f5e3", "#ffffff"];
 let colorIndex = 0;
 
 setInterval(() => {
