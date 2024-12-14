@@ -77,7 +77,7 @@ setInterval(() => {
     document.body.style.transition = "background-color 2s ease";
     document.body.style.backgroundColor = colors[colorIndex];
     colorIndex = (colorIndex + 1) % colors.length;
-}, 5000);
+}, 3000);
 
 // Smooth Scroll Effect
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
