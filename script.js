@@ -1,5 +1,5 @@
 // Typing Effect for Professional Title
-const textArray = ["IT Specialist", "Data Analytics Expert", "Electronics Engineer"];
+const textArray = ["IT and Data Analytics Specialist", "Electronics Engineer", "Technology Professional"];
 let textIndex = 0;
 let charIndex = 0;
 
